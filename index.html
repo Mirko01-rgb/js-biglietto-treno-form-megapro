@@ -1,0 +1,89 @@
+  <!DOCTYPE html>
+  <html lang="en" dir="ltr">
+    <head>
+      <meta charset="utf-8">
+      <title></title>
+      <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+      <div class="container">
+        <!-- Prima parte -->
+        <div class="row">
+          <h1>Calcola il prezzo del tuo biglietto</h1>
+
+          <div class="contenitore1">
+            <!-- section 1 -->
+            <div class="input">
+
+              <div class="">
+                <label for="name">Nome e Cognome</label>
+                <input id="name" type="text" name="name" value="">
+              </div>
+
+              <div class="">
+                <label for="distance">Km da percorrere</label>
+                <input id="distance" type="number" name="distance" value="">
+              </div>
+
+              <div class="">
+                <label for="eta">Fascia d' età</label>
+                <select id="eta" class="" name="eta">
+                  <option selected value="">Selezione un'opzione</option>
+                  <option value="1">minorenne</option>
+                  <option value="2">maggiorenne</option>
+                  <option value="3">over 65</option>
+                </select>
+              </div>
+            </div>
+
+
+            <!-- section2 -->
+            <div class="actions">
+              <input id="genera" type="button"  value="Genera">
+              <input id="annulla" type="button"  value="Annulla">
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- Seconda parte -->
+        <div class="row">
+          <h2>Il tuo biglietto </h2>
+          <div class="contenitore2">
+
+            <p>dettaglio passeggeri</p>
+
+            <table>
+              <thead>
+                <tr>
+                  <th>Nome passeggero</th>
+                  <th>Offerta</th>
+                  <th>Carrozza</th>
+                  <th>Costo biglietto</th>
+
+                </tr>
+              </thead>
+
+              <tbody>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td id="costo-totale"></td>
+              </tbody>
+
+
+
+
+            </table>
+
+          </div>
+
+        </div>
+
+      </div>
+      <script src="js/script.js"></script>
+
+    </body>
+  </html>
